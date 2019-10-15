@@ -40,4 +40,7 @@ setuptools.setup(
     install_requires=[
         "click",
     ],
+    entry_points={
+        'console_scripts': ['pypackgen = pypackgen.scripts.executable:cli'],
+    },
 )

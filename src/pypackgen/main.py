@@ -28,8 +28,8 @@ def create_package(package_name='python_module'):
     open(package_name + '/src/' + package_name + '/__init__.py', 'a').close()
     open(package_name + '/src/' + package_name + '/main.py', 'a').close()
 
-    # Create the tests directory. This is a stylistic choice and what needs to be
-    # done because of how the package directory is added in setup.py.
+    # Create the tests directory. This is a stylistic choice and what needs to
+    # be done because of how the package directory is added in setup.py.
     os.mkdir(package_name + '/test')
     os.mkdir(package_name + '/test/' + package_name)
     open(package_name + '/test/' + package_name + '/__init__.py', 'a').close()
