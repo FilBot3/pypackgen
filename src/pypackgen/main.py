@@ -48,3 +48,10 @@ def create_package(package_name='python_module'):
     open(package_name + '/setup.cfg', 'a').close()
 
     open(package_name + '/python-3-requirements.txt', 'a').close()
+
+
+def cli():
+    """ Fuck you
+    """
+    create_package()
+    print("This should have worked.")

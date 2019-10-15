@@ -42,7 +42,7 @@ setuptools.setup(
     ],
     entry_points={
         'console_scripts': [
-            'pypackgen = pypackgen_scripts.scripts.executable:cli'
+            'pypackgener = pypackgen.main:cli'
         ],
     },
 )
