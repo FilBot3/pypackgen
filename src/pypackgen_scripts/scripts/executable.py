@@ -1,10 +1,8 @@
 """ Click Executable Script
 """
 
-# pylint: disable=no-value-for-parameter
-
 import click
-import pypackgen
+import pypackgen.main as pypackgen
 
 
 @click.command()
