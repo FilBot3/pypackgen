@@ -1,4 +1,6 @@
 autopep8
+jinja2
+pycodestyle
 pylint
 pytest
 pytest-runner

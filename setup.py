@@ -39,6 +39,7 @@ setuptools.setup(
     ],
     install_requires=[
         "click",
+        "jinja2",
     ],
     entry_points={
         'console_scripts': [
