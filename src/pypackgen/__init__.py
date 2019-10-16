@@ -12,4 +12,4 @@ supporting and would not be public.
 """
 
 
-from pypackgen.main import *
+from pypackgen.main import *  # pylint: disable=import-self

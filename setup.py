@@ -19,7 +19,7 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     url="https://github.com/Predatorian3/pypackgen",
     package_dir={'': 'src'},
-    packages=setuptools.find_packages(),
+    packages=setuptools.find_packages(where='src'),
     include_package_data=True,
     classifiers=[
         "Programming Language :: Python :: 3",
@@ -42,7 +42,7 @@ setuptools.setup(
     ],
     entry_points={
         'console_scripts': [
-            'pypackgener = pypackgen.main:cli'
+            'pypackgener = pypackgen_scripts.scripts.executable:cli'
         ],
     },
 )
