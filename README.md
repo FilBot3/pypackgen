@@ -37,7 +37,7 @@ python -m pip install pypackgen
 Run the executable TODO
 
 ```bash
-pypackgen my_custom_module
+pypackgen mytestmodule
 ```
 
 Providing no name will yield in the default package name. No one wants that. This should produce something similar to...
