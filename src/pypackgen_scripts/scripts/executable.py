@@ -6,6 +6,7 @@ import pypackgen.main as pypackgen
 
 # pylint: disable=no-value-for-parameter
 
+
 @click.command()
 @click.argument('package_name', default='python_package')
 def cli(package_name):

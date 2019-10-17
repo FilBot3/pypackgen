@@ -40,7 +40,29 @@ Run the executable TODO
 pypackgen my_custom_module
 ```
 
-Providing no name will yield in the default package name. No one wants that.
+Providing no name will yield in the default package name. No one wants that. This should produce something similar to...
+
+```bash
+(pypackgen) ➜  mytestmodule tree .
+.
+├── LICENSE.md
+├── python-3-requirements.txt
+├── README.md
+├── setup.cfg
+├── setup.py
+├── shovel
+│   └── shovel.py
+├── src
+│   └── mytestmodule
+│       ├── __init__.py
+│       └── main.py
+└── test
+    └── mytestmodule
+        ├── __init__.py
+        └── main_test.py
+
+5 directories, 10 files
+```
 
 ## Development and Testing
 

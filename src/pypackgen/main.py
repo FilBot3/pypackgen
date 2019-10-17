@@ -1,8 +1,10 @@
 """ PyPackGen Main Module
 """
 
+
 import os
 import jinja2
+
 
 def create_readme(package_name):
     """Creates the README.md for the package
@@ -40,7 +42,7 @@ python setup.py develop
 
 ## Usage
 
-TODO: Give usage examples. 
+TODO: Give usage examples.
 
 Used as a library
 
