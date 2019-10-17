@@ -10,7 +10,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="pypackgen",
-    version="0.0.1",
+    version="1.0.0",
     author="Phillip Dudley",
     author_email="Predatorian3@gmail.com",
     description="A Python Package to generate Python Packages like I want \
