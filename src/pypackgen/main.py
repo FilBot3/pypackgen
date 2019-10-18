@@ -63,8 +63,7 @@ Use the [Git Forking Workflow](https://www.atlassian.com/git/tutorials/comparing
 ## References
 
 * [Python Setuptools](https://setuptools.readthedocs.io/)
-* [Python Pip](https://docs.python.org/3/installing/index.html)
-    '''
+* [Python Pip](https://docs.python.org/3/installing/index.html)'''
 
     template_values = {
         'package_name': package_name,
@@ -80,7 +79,8 @@ def create_init(package_name, location):
     """
     template_contents = '''"""__init__.py
 """
-    '''
+
+'''
 
     template_values = {}
 
@@ -95,6 +95,7 @@ def create_main(package_name):
     template_contents = '''""" main.py
 """
 
+
 def hello():
     """Returns hello world
     """
@@ -103,7 +104,8 @@ def hello():
 
 if __name__ == '__main__':
     print(hello())
-    '''
+
+'''
 
     template_values = {}
 
@@ -117,7 +119,8 @@ def create_main_test(package_name):
     """
     template_contents = '''"""main_test.py
 """
-    '''
+
+'''
 
     template_values = {}
 
@@ -149,8 +152,7 @@ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-    '''
+SOFTWARE.'''
 
     template_values = {}
 
@@ -168,8 +170,7 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-    ## [Unreleased]
-    '''
+    ## [Unreleased]'''
 
     template_values = {}
 
@@ -184,14 +185,17 @@ def create_shovel(package_name):
     template_contents = '''"""Shovel Task File
 """
 
-from shovel import task
+
+from shovel import task  # pylint: disable=import-self
+
 
 @task
 def hello():
     """Prints Hello, World
     """
     print('Hello, World!')
-    '''
+
+'''
 
     template_values = {}
 
@@ -206,8 +210,7 @@ def create_setupcfg(package_name):
     template_contents = '''# vim: ft=dosini
 
 [tool:pytest]
-addopts = --pylint --codestyle
-    '''
+addopts = --pylint --codestyle'''
 
     template_values = {}
 
@@ -259,7 +262,8 @@ setuptools.setup(
     ],
     install_requires=[],
 )
-    '''
+
+'''
 
     template_values = {
         'package_name': package_name,
@@ -282,8 +286,7 @@ pytest-pylint
 pytest-runner
 setuptools
 shovel
-virtualenv
-    '''
+virtualenv'''
 
     template_values = {}
 
