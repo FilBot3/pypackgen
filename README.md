@@ -64,6 +64,16 @@ Providing no name will yield in the default package name. No one wants that. Thi
 5 directories, 10 files
 ```
 
+## Documentation
+
+To generate the documentation for the Python Package, use Sphinx. The commands
+will be included in the shovel tasks file to make it easy. However, this does
+require that GNU Make is installed.
+
+```bash
+shovel sphinx
+```
+
 ## Development and Testing
 
 I am using Setuptools to execute Pytest which then calls Pylint and pycodestyle

@@ -39,3 +39,20 @@ def test():
     """ Run the tests via setuptools and pytest with pylint and codestyle
     """
     os.system("python setup.py pytest")
+
+
+@task
+def pydoc():
+    """Run PyDoc to view the package documentation.
+    """
+    os.system("python -m pydoc -b 9999")
+
+
+@task
+def sphinx():
+    """Run Sphinx to generate documentation.
+    """
+    os.chdir('docs')
+    os.system('sphinx-apidoc -f --output-dir source ../src')
+    os.system('make html')
+
